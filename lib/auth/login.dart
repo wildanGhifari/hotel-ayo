@@ -159,11 +159,12 @@ class _LoginState extends State<Login> {
           alignment: Alignment.center,
           children: [
             const Image(
+              height: double.maxFinite,
               width: double.maxFinite,
               image: NetworkImage(
                 "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWwlMjByb29tfGVufDB8fDB8fHww",
               ),
-              fit: BoxFit.fill, //fill type of image inside aspectRatio
+              fit: BoxFit.cover, //fill type of image inside aspectRatio
             ),
             Opacity(
               opacity: 0.64,
