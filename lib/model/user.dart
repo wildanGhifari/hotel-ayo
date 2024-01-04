@@ -2,6 +2,7 @@ class User {
   String? id;
   String username;
   String password;
+  String fullname;
   String email;
   String avatar;
 
@@ -9,6 +10,7 @@ class User {
     this.id,
     required this.username,
     required this.password,
+    required this.fullname,
     required this.email,
     required this.avatar,
   });
@@ -17,6 +19,7 @@ class User {
         id: json['id'],
         username: json['username'],
         password: json['password'],
+        fullname: json['fullname'],
         email: json['email'],
         avatar: json['avatar'],
       );
@@ -24,6 +27,7 @@ class User {
   Map<String, dynamic> toJson() => {
         "username": username,
         "password": password,
+        "fullname": fullname,
         "email": email,
         "avatar": avatar,
       };

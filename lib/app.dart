@@ -20,6 +20,7 @@ class _AppState extends State<App> {
     const BookingPage(),
     const Profile(),
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +52,7 @@ class _AppState extends State<App> {
           NavigationDestination(
             selectedIcon: Icon(Icons.person_rounded),
             icon: Icon(Icons.person_outline),
-            label: 'Profile',
+            label: 'Account',
           ),
         ],
       ),
